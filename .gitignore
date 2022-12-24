@@ -1,6 +1,6 @@
 .metadata/
 bin/
-.setting/
+.settings/
 Server/
 .classpath
 .project
