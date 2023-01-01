@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react' 
 function Form2() {
-    const [name, setName] = useState("");
+    const [name, setName2] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,7 +13,7 @@ function Form2() {
         <input 
           type="text" 
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setName2(e.target.value)}
         />
       </label>
       <input type="submit" />
