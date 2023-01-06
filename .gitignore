@@ -4,3 +4,4 @@ bin/
 Server/
 .classpath
 .project
+node_modules/
