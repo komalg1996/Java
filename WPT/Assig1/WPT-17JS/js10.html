@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function date() {
+            var date = new Date();
+            var d = date.getDate();
+            var day = date.toLocaleString('default', { weekday: 'long' });
+            var m = date.toLocaleString('default', { month: 'long' });
+            var y = date.getFullYear();
+            var last = new Date("2022/12/31");
+            var diffDays = parseInt((last - date) / (1000 * 60 * 60 * 24), 10);
+            document.getElementById("div").innerHTML = "Today is " + day + ", " + d + " " + m + " " + y + ", " + "Welcome, and Good Aternoon to you. "
+            document.getElementById("div2").innerHTML = "Number of Days left till end of year :" + diffDays;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Qn10.sdisplays the current date in the format specified</p>
+    <button type="button" name="date" id="date" onclick="date()">show date</button>
+    <b>
+        <div id="div" style="color: red"></div>
+        <div id="div2" style="color: red"></div>
+    </b>
+</body>
+
+</html>

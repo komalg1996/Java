@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getName() {
+            var a = prompt("enter employee 1 name:")
+            var b = prompt("enter employee 2 name:")
+            var c = prompt("enter employee 3 name:")
+            var d = prompt("enter employee 4 name:")
+            var e = prompt("enter employee 5 name:")
+            var f = prompt("enter employee 6 name:")
+             //arr.push(a);
+            var arr = [a, b, c, d, e, f];
+            arr.sort();
+            document.getElementById("myid").innerHTML += arr
+        }
+   
+
+    </script>
+</head>
+
+<body>
+    <p>Qn12.Accept and store names of 6 employees into array and display in sorted order of names</p>
+    <button type="button" name="nm" id="btn1" onclick="getName()">click me</button>
+    <div id="myid"></div>
+</body>
+
+</html>

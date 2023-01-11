@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function minimum(x, y, ...arr) {
+            var a = arr[0];
+            for (var i = 0; i < arr.length; i++) {
+                if (a > arr[i]) {
+                    a = arr[i];
+                }
+                document.getElementById("min").innerHTML = "Minimum is : " + a;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <p>Qn7.Write a program min() that takes any number of arguments and returns minimum number in the set of
+        arguments. Do not use the Math predefined objet</p>
+    <button type="button" name="btn" id="btn" onclick="minimum(10,14,12,15,9,11,99,2)">Find min</button>
+    <div id="min"></div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function print() {
+            var n = parseInt(document.getElementById("nm").value);
+            var m = document.getElementById("msg").value;
+            for (var i = 1; i <= n; i++) {
+                document.getElementById("d").innerHTML += m + " ";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Q2. Accept an integer value and a message from user and print the message that many number oftimes.</p><br>
+    <label for="nm">Enter number </label> <br>
+    <input type="number" name="nm" id="nm" required><br>
+    <label for="msg">Enter message</label><br>
+    <input type="text" name="msg" id="msg"><br>
+    <button type="button" name="btn" id="btn" onclick="print()">Print the Message</button>
+    <div id="d"></div>
+</body>
+
+</html>

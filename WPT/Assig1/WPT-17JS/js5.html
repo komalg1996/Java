@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function  createTable(){
+        var num = document.getElementById("n1").value;
+        for (var i = 1; i <= 10; i++) {
+          var sol = num * i;
+          console.log(sol);
+            document.getElementById("tab").innerHTML += num +"*"+ i +"="+ sol + "<br>";
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+    <p>Qn5.Write a program to print the multiplication table of a given number up to 10 multiples. </p>
+    <label for="n1">Enter Number</label>
+    <input type="number" name="nm" id="n1">
+    <button type="button" name="btn" id="btn1" onclick="createTable()">Create Table</button>
+    <div id="tab"></div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function even() {
+            //take num from user
+            //var num = parseInt(prompt("Enter the Number"));
+            var num= parseInt(document.getElementById("n1").value);
+            //find even
+            for (var i = 1; i <= num; i++) {
+                if (i % 2 == 0) {
+
+                    document.getElementById("myid").innerHTML += i + " "
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <p>Qn3.Write a function to list all even numbers less than or equal to the number n. Take the value of n as input
+        from user. Use while loop</p>
+    <label for="n1">Enter number</label>
+    <input type="number" name="nm" id="n1">
+    <button type="button" name="nm" id="n2" onclick="even()">FindEven</button>
+   
+    <div id="myid">even numbers are : </div>
+
+</body>
+
+</html>

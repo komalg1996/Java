@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = ["yrucrem", "sunev", "htrae", "esram", "retipuj"];
+        var temp = [];
+        function reverse() {
+            for (var i = 0; i < arr.length; i++) {
+                let s = arr[i].split("");
+                let r = s.reverse();
+                let j = r.join("");
+                temp[i] = j;
+            }
+            temp.sort();    //arrange in alphabetical order
+
+            document.getElementById("myid").innerHTML = temp;
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <p>Qn15.An array contains a set of 5 words. Write Javascript to reverse each word and arrange the resulting words
+        in alphabetical order. Make use of array functions</p>
+    <button type="button" name="nm" id="btn1" onclick="reverse()">click me</button>
+    <div id="myid"></div>
+</body>
+
+</html>
