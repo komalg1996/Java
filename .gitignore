@@ -5,3 +5,5 @@ Server/
 .classpath
 .project
 node_modules/
+.mvn/
+target/
