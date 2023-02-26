@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Search(){
+        var a=["www.google.com","codehs.gitbooks.io","en.m.wikipedia.com","www.mns.com","www.amazon.co.in","answer.yahoo.com","www.coderanch.com"]
+        var count=0;
+        for(var i=0;i<a.length;i++){
+
+            //if(a[i].includes("www")){
+                if(a[i].startsWith("w")){
+            count++
+            }
+        }
+        document.getElementById("mydiv").innerHTML=count;
+        //document.write(count);
+    
+    }
+    </script>
+</head>
+<body>
+    <p>Qn16.Search for all sites that begin with “www” and display the total number of such sites.</p>
+    <button type="button" name="btn" id="btn1" onclick="Search()">Search</button>
+    <div id="mydiv"></div>
+</body>
+</html>

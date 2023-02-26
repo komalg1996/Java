@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table,th,td{
+        border: 2px solid;
+        background-color: rgb(230, 162, 162);
+        width:40%;
+        border-collapse: collapse;
+    }
+    #emp{
+        width: 60px;
+    }
+</style>
+
+</head>
+<body>
+   <table>
+            <tr>
+                <td>
+                 <label for="nm">Name</label>
+                </td>
+                <td>
+                 <input type="text" name="Name" id="nm">
+                 </td>
+             </tr>
+                 <br>
+             <tr>
+                 <td>
+                     <lable for="emp">Employee Code</lable>
+                 </td>
+                 <td width="3px">
+                     <input type="number"  name="Employee Code" id="emp">
+                 </td>   
+             </tr>
+            <tr>
+                <td>
+                    <label for="dept">Department</label>
+                </td>
+                <td>
+                    <input type="radio" name="Department" id="admin" value="ADMIN">
+                    <label for="admin ">ADMIN</label>
+                    <br>
+                    <input type="radio" name="Department" id="hr" value="HR">
+                    <label for="hr">HR</label>
+                    <br>
+                    <input type="radio" name="Department" id="technical" value="Technical">
+                    <label for="technical">Technical</label>
+                    <br>
+                    <input type="radio" name="Department" id="accounts" value="Accounts">
+                    <label for="accounts">Accounts</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="doj">Date of Joining</label>
+                </td>
+                <td>
+                    <input type="number"name type="dd" style="width: 20px;">/<input type="number"name type="mm" style="width:20px">/<input type="number"name type="yyyy" style="width:20px">  
+                    <p>dd/mm/yyyy</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ad">Address</label>
+                </td>
+                <td>
+                    <textarea rows="5" cols="30" style="resize:none"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Training programs Attended</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Training programs Attended" id="html/dhtml" value="HTML/DHTML">
+                    <label for="html/dhtml">HTML/DHTML</label>
+                    <br>
+                    <input type="checkbox" name="Training programs Attended" id="java" value="JAVA">
+                    <label for="java">JAVA</label>
+                    <br>
+                    <input type="checkbox" name="Training programs Attended" id="client/server" value="CLIENT/SERVER">
+                    <label for="client/server">CLIENT/SERVER</label>
+                    <br>
+                    <input type="checkbox" name="Training programs Attended" id=".net" value=".NET">
+                    <label for=".net">.NET</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Traning programes need to attend</label>
+                </td>
+                <td>
+                   <select name="tp" id="1" multiple>
+                    <option>JAVASCRIPT</option>
+                    <option>JSTRUTS</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Send information at</label>
+                </td>
+                <td>
+                    <a href="http://gmail.com">komalghorpade27@gmail.com</a>
+                </td>
+            </tr>
+        
+        </form>
+   </table>
+</body>
+</html>

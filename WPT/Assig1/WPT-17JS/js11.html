@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getWeekDay(){
+            let date=new Date(prompt("Enter Date: "));
+            //var arr=['Mon','Tues','Wed','Thr','Fri','Sat','Sun'];
+            var day = date.toLocaleString('default', { weekday: 'long' });
+            alert(day.substr(0,3));
+        }
+    </script>
+</head>
+<body>
+    <p>Qn11.Write a function getWeekDay(date) to show the weekday in short format</p>
+    <button type="button" name="btn" id="btn1" onclick="getWeekDay()">GetDay</button>
+    <div id="myid"></div>
+</body>
+</html>

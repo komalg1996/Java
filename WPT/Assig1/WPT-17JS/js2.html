@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function print() {
+            //take values from doc or user
+            var n = parseInt(document.getElementById("n1").value);
+            var m = document.getElementById("msg1").value;
+            //printing num by for loop 
+            for (var i = 1; i <= n; i++) {
+                document.getElementById("myid").innerHTML += m + " ";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Qn2.Accept an integer value and a message from user and print the message that many number of times.</p>
+    <label>Enter number</label><input type="number" name="num" id="n1"><br>
+    <label>Your message</label><input type="text" name="msg" id="msg1"><br>
+    <button type="button" name="btn" id="btn" onclick="print()">Print the message</button>
+    <div id="myid"></div>
+</body>
+
+</html>
