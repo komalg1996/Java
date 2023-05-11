@@ -20,10 +20,10 @@ public class ReverseStack {
 		for(int i=0;i<s.size();i++) {
 			s.push(q.dequeue());
 		//print elements of stack
-			for(int i=0;i<s.size();i++) {
+			//for(int i=0;i<s.size();i++) {
 				System.out.println(s.pop()+"");
 			}
 		}
 	}
 
-}
+
