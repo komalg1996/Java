@@ -13,4 +13,10 @@ public class Faculty extends Person {
 	public String toString() {
 		return "Faculty "+super.toString()+" exp "+expInYears+" sme "+sme;
 	}
+	//add new behaviour : teach
+	public void teach() {
+		//lastname : teaching in sme
+		System.out.println(getLastName()+"Teaching in "+sme);
+	}
+	
 }

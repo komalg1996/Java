@@ -18,6 +18,12 @@ public class Person {
 	{
 		return firstName+" "+lastName;
 	}
-	
+	//add a getter for firstname
+	public String getFirstName() {
+		return firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
 	
 }

@@ -21,7 +21,12 @@ public class Student extends Person{
 		return "Student "+super.toString()+" year of passing "+gradYear+" course "+courseName+" fees "+fees+" marks"+marks;
 	}
 
-	
+	//aditional behaviour
+	public void study() {
+		//display fn of student  studying in this course
+		System.out.println(getFirstName()+" Studying in course "+courseName);
+		
+	}
 	
 	
 }
