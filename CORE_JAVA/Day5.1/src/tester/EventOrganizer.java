@@ -15,9 +15,8 @@ public class EventOrganizer {
 		boolean exit = false;
 		int counter = 0; // counter shud not exced while workomh with arrays
 		while (!exit) {
-			System.out.println(
-					"Menu :  1. Register Student 2.Register Faculty 3. Display participant details" +
-			"4.Invoke stdy/teach 10 Exit ");
+			System.out.println("Menu :  1. Register Student 2.Register Faculty 3. Display participant details"
+					+ "4.Invoke stdy/teach 10 Exit ");
 			System.out.println("Choose Option");
 			switch (sc.nextInt()) {
 			case 1:// register student
@@ -37,21 +36,25 @@ public class EventOrganizer {
 					System.out.println("Event Full...!!!");
 				break;
 			case 3:// display all participant details
-				for (Person p : participants)//p=participants[0]....
-					if(p!=null)
+				for (Person p : participants)// p=participants[0]....
+					if (p != null)
 						System.out.println(p);
-					break;
+				break;
 			case 4:// Invoke stdy/teach
 				System.out.println("Enter seat number");
-				int index=sc.nextInt()-1;
-				if(index>=0 && index<counter) {
+				int index = sc.nextInt() - 1;
+				if (index >= 0 && index < counter) {
 					Person p = participants[index];
-					if(p!=null)
-						p.study();//javac resolves by the type of the reference (ie. it checks study exists in person class )
-						//javac error
-						//when u are climbing down the hierarchy then compiler cannot do the type casting automaticaly
+					if (p != null) {
+						if(p instanceof Student)
+						((Student)p).study();// javac resolves by the type of the reference (ie. it checks study exists in
+									// person class )
+						// javac error
+						// when u are climbing down the hierarchy then compiler cannot do the type
+						// casting automaticaly
+					}
 				}
-					break;
+				break;
 			case 10:
 				exit = true;
 				break;

@@ -16,9 +16,20 @@ public class Test5 {
 //		ref = new Faculty("Madhura", "A", 10, "java");//Faculty IS-A Object:yes :upcasting
 //		System.out.println(ref);
 	
-		((Student)ref).study();//javac checks by type of ref : why explicit type casting is required?
-		//down casting :Is NOT implicit conversion
 		
+		//ref.study();//javac checks by type of ref
+		//so adding explicit type casting
+		((Student)ref).study();//javac checks by type of ref : why explicit type casting is required?
+		//down casting :Is NOT implicit conversion, programmer has to do it.
+		
+		ref = new Faculty("Madhura", "A", 10, "java");//Faculty IS-A Object:yes :upcasting
+		System.out.println(ref);//it prints faculty;s details
+		
+		//ref.teach();//javac checks if teach() exists in person : no -- so javac err
+		//how to tell compiler that its not person but a faculty--- by down casting
+		
+		((Faculty)ref).teach();// now does teach exists in faculty : yes -- no javac err
+	
 	}
 
 }
